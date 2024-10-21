@@ -2,6 +2,8 @@
 
 <ul>
     <li *ngFor="let product of products">
-        <a [routerLink]="['/products', product.id]">{{ product.name }}</a>
+        <div (click)="userClickedAProduct(product.id)">{{ product.name }}</div>
     </li>
 </ul>
+
+<app-product-details></app-product-details>

@@ -9,7 +9,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'products/:id', component: ProductDetailsComponent }, // <------
+  // { path: 'products/:id', component: ProductDetailsComponent }, // <------
+  { path: 'products/:id', component: ProductsComponent }, // <------
   { path: 'conference', component: ConferenceComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' } // "catch all" routing

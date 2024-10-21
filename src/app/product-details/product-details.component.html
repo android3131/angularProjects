@@ -1,6 +1,11 @@
-<h2>Product Details</h2>
-
-<div *ngIf="productId">
-    <p>Product ID: {{ productId }}</p>
-    <!-- פרטים נוספים של המוצר  -->
+<p>product-detailed-view works!</p>
+<p *ngIf="productId && productId>-1 && productId<=3">
+    You asked for product with id: {{ productId }}.
+</p>
+<p *ngIf="productId && productId===-1">
+    Choose Product to display.
+</p>
+<div *ngIf="productId && productId>3">
+    This is not legal value for product id.
+    <h2>{{productId}}</h2>
 </div>
