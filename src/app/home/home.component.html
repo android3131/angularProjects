@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+
+<button (click)="toggleVisibility()">
+    Toggle Content
+</button>
+
+<div *ngIf="isVisible">
+    The content is visible!
+</div>
+
+<div [ngStyle]="{'color': isVisible ? 'green' : 'red'}">
+    Green means visible, Red not visible!
+</div>
