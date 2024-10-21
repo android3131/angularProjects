@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConferenceComponent } from './conference-screen/conference/conference.component';
+import { PersonCardComponent } from './conference-screen/person-card/person-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    ConferenceComponent,
+    PersonCardComponent,
   ],
   imports: [
     BrowserModule,
