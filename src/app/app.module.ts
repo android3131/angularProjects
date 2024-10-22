@@ -13,6 +13,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CategoriesComponent } from './food/categories/categories.component';
 import { InstructionsComponent } from './food/instructions/instructions.component';
 import { DishesComponent } from './food/dishes/dishes.component';
+import { SearchBoxComponent } from './emit-demo/search-box/search-box.component';
+import { ProductsGalleryComponent } from './emit-demo/products-gallery/products-gallery.component';
 
 
 @NgModule({
@@ -26,12 +28,15 @@ import { DishesComponent } from './food/dishes/dishes.component';
     ProductDetailsComponent,
     CategoriesComponent,
     InstructionsComponent,
-    DishesComponent
+    DishesComponent,
+    SearchBoxComponent,
+    ProductsGalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

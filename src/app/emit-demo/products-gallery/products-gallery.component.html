@@ -1,0 +1,10 @@
+<div class="products-gallery">
+    <h2>Search Result: {{searchResult}}</h2>
+
+    <app-search-box (searchEvent)="onSearch($event)"></app-search-box>
+
+    <div *ngFor="let product of products">
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+    </div>
+</div>
