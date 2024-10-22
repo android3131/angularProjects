@@ -1,0 +1,15 @@
+<div class="Categories" style="display:flex; gap:50px;">
+    <div class="categoriesMenu" style="height: 100vh; overflow-y: scroll;">
+        <ng-container *ngIf="categoriesArr">
+            <div *ngFor="let curr of categoriesArr" (click)="userClickedACategory(curr.strCategory)">
+                <h3>{{curr.strCategory}}</h3>
+            </div>
+        </ng-container>
+    </div>
+    <div style="width: 40%; height: 100vh; overflow-y: scroll;">
+        <app-dishes></app-dishes>
+    </div>
+    <div style="width: 40%;">
+        <app-instructions></app-instructions>
+    </div>
+</div>

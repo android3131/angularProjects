@@ -10,6 +10,9 @@ import { PersonCardComponent } from './conference-screen/person-card/person-card
 import { BaseContentComponent } from './base-content/base-content.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CategoriesComponent } from './food/categories/categories.component';
+import { InstructionsComponent } from './food/instructions/instructions.component';
+import { DishesComponent } from './food/dishes/dishes.component';
 
 
 @NgModule({
@@ -21,6 +24,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BaseContentComponent,
     ProductsComponent,
     ProductDetailsComponent,
+    CategoriesComponent,
+    InstructionsComponent,
+    DishesComponent
   ],
   imports: [
     BrowserModule,

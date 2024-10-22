@@ -1,0 +1,6 @@
+<h2 *ngIf="categoryDihesId" style="color: rgb(235, 39, 13);">
+    Dishes for Category {{categoryDihesId}}
+</h2>
+<div *ngFor="let curr of categoryDishesArr">
+    <h3 (click)="dishWasClicked(curr.idMeal)">{{curr.strMeal}}</h3>
+</div>
